@@ -77,4 +77,10 @@ export default {
   margin-bottom: 0;
   font-size: 0.75em;
 }
+
+@media (max-width: 900px) {
+  .dsa-footer > * {
+    width: calc(100% / 4);
+  }
+}
 </style>
