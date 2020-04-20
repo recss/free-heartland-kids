@@ -4,19 +4,21 @@
  */
 
 export default function (doc) {
-  console.log('link-resolver.js', doc);
-
   if (doc.isBroken) {
+    console.log('link-resolver.js - isBroken', doc);
     return '/not-found';
   }
 
   if (doc.type === 'home') {
+    console.log('link-resolver.js - home', doc);
     return '/'
   }
 
   if (doc.type === 'pages') {
+    console.log('link-resolver.js - pages', doc);
     return '/page/' + doc.uid
   }
 
+  console.log('link-resolver.js - not-found', doc);
   return '/not-found'
 }

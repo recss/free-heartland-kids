@@ -54,7 +54,7 @@ export default {
             vm.documentId = document.id;
             vm.fields.title = document.data.title;
             vm.fields.body = document.data.body;
-            
+
           } else {
             this.$router.push({ name: 'not-found' });
           }
@@ -87,11 +87,6 @@ export default {
 
 .dsa-page > * {
   margin: 0 auto;
-
-  /* display: flex; */
-    /* flex-flow: column nowrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .dsa-page a {
