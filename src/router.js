@@ -16,7 +16,7 @@ export default new Router({
     },
     {
       path: '/page/:uid',
-      name: 'page',
+      name: 'pages',
       component: Page
     },
     {
