@@ -214,6 +214,11 @@ export default {
 		height: 40px;
 	}
 
+	.dsa-header router-link,
+	.dsa-header a {
+		font-size: 0.8em;
+	}
+
 	#Layer_1 {
 		height: 120px;
 		position: relative;
