@@ -1,15 +1,15 @@
 <!-- Create file src/views/Page.vue -->
 
 <template>
-  <div class="wrapper">
+  <article class="dsa-page">
 
-    <prismic-edit-button :documentId="documentId"/>
-
-    <h1 class="title">
+    <h2 class="dsa-title">
       {{ $prismic.richTextAsPlain(fields.title) }}
-    </h1>
+    </h2>
 
-    <prismic-rich-text :field="fields.description" class="description"/>
+    <prismic-rich-text :field="fields.body" />
+
+    <!-- <prismic-edit-button :documentId="documentId"/> -->
 
     <!-- <div class="cta-wrapper">
       <prismic-link :field="fields.ctaLink" class="cta">
@@ -21,7 +21,7 @@
       <prismic-image :field="fields.icon" class="icon"/>
     </div> -->
 
-  </div>
+  </article>
 </template>
 
 <script>
@@ -39,12 +39,16 @@ export default {
   },
   methods: {
     getContent (uid) {
-      this.$prismic.client.getByUID('page', uid)
+			let vm = this;
+
+      this.$prismic.client.getByUID('pages', uid)
         .then((document) => {
           if (document) {
-            this.documentId = document.id;
-            this.fields.title = document.data.title;
-            this.fields.body = document.data.body;
+						console.log(document);
+
+            vm.documentId = document.id;
+            vm.fields.title = document.data.title;
+            vm.fields.body = document.data.body;
           } else {
             this.$router.push({ name: 'not-found' });
           }
@@ -62,65 +66,23 @@ export default {
 </script>
 
 <style>
-.wrapper {
-  max-width: 820px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 10px;
-  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.dsa-page {
+  min-height: calc(100vh - 200px);
+  max-width: 1000px;
+  margin: -50px auto 0;
+  padding: 2em 1em 5em;
+  display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.title {
-  font-size: 32px;
+.dsa-page a {
+  color: #e1251b;
 }
 
-.description {
-  margin-top: 40px;
-}
-
-.description h2 {
-  font-size: 24px;
-}
-
-.description h2:not(:first-child) {
-  margin-top: 20px;
-}
-
-.description p {
-  line-height: 1.5;
-}
-
-.description p:not(:first-child) {
-  margin-top: 10px;
-}
-
-.description a {
-  color: #404e9f;
-}
-
-.description a:hover {
-  text-decoration: underline;
-}
-
-.cta-wrapper {
-  margin-top: 40px;
-}
-
-.cta {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 20px;
-  background-color: #404e9f;
-  color: white;
-}
-
-.icon-wrapper {
-  margin-top: 40px;
-}
-
-.icon {
-  max-width: 100%;
+.dsa-title {
+  color: rgba(0, 0, 0, 0.25);
+  /* align-self: baseline; */
 }
 </style>

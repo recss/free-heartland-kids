@@ -5,15 +5,16 @@ import htmlSerializer from './prismic/html-serializer'
 import App from './App.vue'
 import router from './router'
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 Vue.use(PrismicVue, {
   endpoint: window.prismic.endpoint,
   linkResolver,
   htmlSerializer
-})
+});
 
 new Vue({
   router,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');

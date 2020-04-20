@@ -12,7 +12,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      // redirect: { name: 'tutorial' }
+      redirect: { path: '/page/what-we-know' }
     },
     {
       path: '/page/:uid',
