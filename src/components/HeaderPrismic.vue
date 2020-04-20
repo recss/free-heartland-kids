@@ -189,6 +189,7 @@ export default {
 
 @media (max-width: 900px) {
 	.dsa-header {
+		margin-top: 1em;
 		margin-bottom: 2em;
 		display: flex;
 	}
