@@ -78,7 +78,7 @@ export default {
   min-height: calc(100vh - 200px);
   max-width: 1000px;
   margin: -50px auto 0;
-  padding: 2em 2.5em 5em;
+  padding: 2em 2em 5em;
   display: flex;
     flex-flow: column nowrap;
     justify-content: center;

@@ -12,8 +12,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      // redirect: { path: '/page/what-we-know' }
-      redirect: { path: '/page/about-us' }
+      redirect: { path: '/page/what-we-know' }
     },
     {
       path: '/page/:uid',
