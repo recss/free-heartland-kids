@@ -12,11 +12,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: { path: '/page/what-we-know' }
+      // redirect: { path: '/page/what-we-know' }
+      redirect: { path: '/page/about-us' }
     },
     {
       path: '/page/:uid',
-      name: 'pages',
+      name: 'page',
       component: Page
     },
     {

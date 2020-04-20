@@ -4,6 +4,8 @@
  */
 
 export default function (doc) {
+  console.log('link-resolver.js', doc);
+
   if (doc.isBroken) {
     return '/not-found';
   }

@@ -49,11 +49,12 @@ export default {
       this.$prismic.client.getByUID('pages', uid)
         .then((document) => {
           if (document) {
-						console.log(document);
+						console.log('Page.vue', document);
 
             vm.documentId = document.id;
             vm.fields.title = document.data.title;
             vm.fields.body = document.data.body;
+            
           } else {
             this.$router.push({ name: 'not-found' });
           }
@@ -110,7 +111,7 @@ export default {
 }
 
 img {
-  margin-bottom: 2em;
-  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.25);
+  margin: 2em 0;
+  /* box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.25); */
 }
 </style>
