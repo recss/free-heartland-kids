@@ -7,6 +7,10 @@
       {{ $prismic.richTextAsPlain(fields.title) }}
     </h2>
 
+      <prismic-link :field="fields.ctaLink" class="cta">
+        {{ $prismic.richTextAsPlain(fields.ctaText) }}
+      </prismic-link>
+
     <prismic-rich-text :field="fields.body" />
 
     <!-- <prismic-edit-button :documentId="documentId"/> -->
@@ -90,12 +94,20 @@ export default {
   color: #e1251b;
 }
 
-.dsa-page h3 {
+.dsa-page h3,
+.dsa-page h4,
+.dsa-page h5,
+.dsa-page h6 {
   margin: 2em 0 1em;
 }
 
 .dsa-title {
   color: rgba(0, 0, 0, 0.25);
   /* align-self: baseline; */
+}
+
+img {
+  margin-bottom: 2em;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.25);
 }
 </style>
