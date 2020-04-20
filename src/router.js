@@ -12,8 +12,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: { path: '/page/what-we-know' },
-      component: Page
+      redirect: { path: '/page/what-we-know' }
     },
     {
       path: '/page/:uid',

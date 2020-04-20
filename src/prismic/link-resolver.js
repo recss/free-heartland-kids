@@ -5,16 +5,16 @@
 
 export default function (doc) {
   if (doc.isBroken) {
-    return '/not-found'
+    return '/not-found';
   }
 
-  if (doc.type === 'home') {
-    return '/'
+  // if (doc.type === 'home') {
+  //   return '/'
+  // }
+
+  if (doc.type === 'pages') {
+    return '/page/' + doc.uid;
   }
 
-  if (doc.type === 'page') {
-    return '/page/' + doc.uid
-  }
-
-  return '/not-found'
+  return '/not-found';
 }
