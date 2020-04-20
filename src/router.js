@@ -12,7 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: { path: '/page/what-we-know' }
+      redirect: { path: '/page/what-we-know' },
+      component: Page
     },
     {
       path: '/page/:uid',
@@ -35,8 +36,8 @@ export default new Router({
       component: Tutorial
     },
     {
-      path: '*',
-      redirect: { name: 'not-found' }
+      // path: '*',
+      // redirect: { name: 'not-found' }
     }
   ]
 })
