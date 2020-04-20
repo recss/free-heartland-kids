@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Page from './views/Page.vue'
 import NotFound from './views/NotFound.vue'
 import Preview from './views/Preview.vue'
 import Tutorial from './views/Tutorial.vue'
@@ -11,7 +12,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: { name: 'tutorial' }
+      // redirect: { name: 'tutorial' }
+    },
+    {
+      path: '/page/:uid',
+      name: 'page',
+      component: Page
     },
     {
       path: '/not-found',

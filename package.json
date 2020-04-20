@@ -1,10 +1,10 @@
 {
-  "name": "prismic-vuejs-starter",
+  "name": "free-highland-kids",
   "version": "1.2.0",
-  "description": "Vue.js starter project with content managed in Prismic",
+  "description": "Democratic Socialists of America, Chicago Chapter",
   "license": "Apache-2.0",
-  "repository": "github:prismicio/vuejs-starter",
-  "author": "Prismic",
+  "repository": "github:recss/free-prismic-kids",
+  "author": "Kevin K. Johnson with help from Prismic",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
