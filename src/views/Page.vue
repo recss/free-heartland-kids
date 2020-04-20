@@ -93,6 +93,12 @@ export default {
   color: #e1251b;
 }
 
+.dsa-page a:focus,
+.dsa-page a:hover {
+  color: #fff;
+  background-color: hsl(3, 79%, 49%);
+}
+
 .dsa-page h3,
 .dsa-page h4,
 .dsa-page h5,
