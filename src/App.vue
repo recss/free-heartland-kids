@@ -29,6 +29,6 @@ export default {
 #app p,
 #app li {
   max-width: 45em;
-  margin-bottom: 1em;
+  margin: 0 auto 1em;
 }
 </style>

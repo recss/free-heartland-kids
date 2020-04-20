@@ -77,6 +77,15 @@ export default {
     align-items: center;
 }
 
+.dsa-page > * {
+  margin: 0 auto;
+  
+  /* display: flex; */
+    /* flex-flow: column nowrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
 .dsa-page a {
   color: #e1251b;
 }
