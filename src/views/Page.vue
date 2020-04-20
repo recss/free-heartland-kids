@@ -79,7 +79,7 @@ export default {
 
 .dsa-page > * {
   margin: 0 auto;
-  
+
   /* display: flex; */
     /* flex-flow: column nowrap; */
     /* justify-content: center; */
@@ -88,6 +88,10 @@ export default {
 
 .dsa-page a {
   color: #e1251b;
+}
+
+.dsa-page h3 {
+  margin: 2em 0 1em;
 }
 
 .dsa-title {
