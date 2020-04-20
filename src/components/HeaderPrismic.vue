@@ -85,10 +85,15 @@
 		</a>
 
 		<a href="/page/what-we-know">What We Know</a>
+
 		<a href="/page/about-us">About Us</a>
+
 		<a href="/page/more-info">More Info</a>
+
 		<a href="/page/resources">Resources</a>
+
 		<a href="/page/media">Media</a>
+
 		<a href="https://actionnetwork.org/petitions/freeheartlandkids" target="_blank" class="dsa-petition">Petition</a>
   </header>
 </template>
@@ -122,7 +127,6 @@ export default {
 }
 
 .dsa-header a {
-	/* border-bottom: 2px solid transparent; */
 	border-bottom: 1px solid #e1251b;
 	color: #333;
 	font-weight: bold;
@@ -133,8 +137,6 @@ export default {
 .dsa-header a:focus,
 .dsa-header a:hover {
 	border-bottom-width: 3px;
-	/* color: #fff; */
-	/* background-color: #e1251b; */
 }
 
 .dsa-header a.dsa-header-logo {
