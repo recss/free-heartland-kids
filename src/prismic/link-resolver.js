@@ -8,13 +8,13 @@ export default function (doc) {
     return '/not-found';
   }
 
-  // if (doc.type === 'home') {
-  //   return '/'
-  // }
-
-  if (doc.type === 'pages') {
-    return '/page/' + doc.uid;
+  if (doc.type === 'home') {
+    return '/'
   }
 
-  return '/not-found';
+  if (doc.type === 'pages') {
+    return '/page/' + doc.uid
+  }
+
+  return '/not-found'
 }

@@ -35,8 +35,8 @@ export default new Router({
       component: Tutorial
     },
     {
-      // path: '*',
-      // redirect: { name: 'not-found' }
+      path: '*',
+      redirect: { name: 'not-found' }
     }
   ]
 })
