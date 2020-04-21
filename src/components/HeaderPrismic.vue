@@ -162,6 +162,7 @@ export default {
 	transition: 0.25s;
 }
 
+.dsa-header .router-link-active,
 .dsa-header router-link:focus,
 .dsa-header router-link:hover,
 .dsa-header a:focus,
