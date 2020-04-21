@@ -102,6 +102,7 @@ export default {
 .dsa-page h4,
 .dsa-page h5,
 .dsa-page h6 {
+  max-width: 760px;
   margin: 2em 1em 1em;
 }
 
