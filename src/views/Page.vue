@@ -89,6 +89,10 @@ export default {
   margin: 0 auto;
 }
 
+.dsa-page > div:first-of-type {
+  width: 760px;
+}
+
 .dsa-page a {
   color: #e1251b;
 }
@@ -102,7 +106,7 @@ export default {
 .dsa-page h4,
 .dsa-page h5,
 .dsa-page h6 {
-  max-width: 760px;
+  width: 720px;
   margin: 2em 1em 1em;
 }
 
