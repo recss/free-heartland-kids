@@ -102,7 +102,7 @@ export default {
 .dsa-page h4,
 .dsa-page h5,
 .dsa-page h6 {
-  margin: 2em 0 1em;
+  margin: 2em 1em 1em;
 }
 
 .dsa-title {
